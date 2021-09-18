@@ -23,7 +23,7 @@ public class Shape extends ImageIcon {
 		// margin : 이 이미지의 영역을 나타내는 범위 (이 영역안에 있으면 충돌 한 것으로 판단 하기 위함)
 		// steps : 이미지가 움직일때 이동하는 좌표 단위
 		// xBoundary, yBoundary : 그림이 이동할 수 있는 좌표의 최대값
-		super (imgURL);
+		super(imgURL);
 		this.x = x;
 		this.initX = x;
 		this.y = y;
@@ -39,8 +39,8 @@ public class Shape extends ImageIcon {
 	// 시작 위치를 임의의 포인트로 주는 구성자
 	public Shape(String imgURL, int margin, int steps, int xBoundary, int yBoundary) {
 		this (imgURL, 0, 0, margin, steps, xBoundary, yBoundary);
-		x= (int) (Math.random() * xBoundary);
-		y= (int) (Math.random() * yBoundary);
+		x= (int) (Math.random() * xBoundary+1);
+		y= (int) (Math.random() * yBoundary+1);
 	}
 	
 	// 시작위치를 주어진 바운더리 중앙에 위치시키는 구성자
