@@ -59,7 +59,7 @@ public class Myframe {
 	PosImageIcon player;
 	public static String playerName;
 	
-	 boolean flag;
+	 boolean flag =false;
 
 	// 생성된 프레임과 패널
 	JFrame startFrame = new JFrame(" 돈을 갖고 튀어라 ");
