@@ -8,8 +8,8 @@ import java.net.URL;
 
 
 
-public class VerticallyMovingShape extends Shape {
-	public VerticallyMovingShape(String  imgURL, int x, int y, int margin, int steps, int xBoundary, int yBoundary) {
+public class VerticallyMovingShape extends PosImageIcon {
+	public VerticallyMovingShape(String  imgURL, int x, int y, int margin, double  steps, int xBoundary, int yBoundary) {
 		// imgPath : 그림 파일의 경로명
 		// x, y : 이미지의 위치 좌표
 		// margin : 이 이미지의 영역을 나타내는 범위 (이 영역안에 있으면 충돌 한 것으로 판단 하기 위함)
@@ -18,7 +18,7 @@ public class VerticallyMovingShape extends Shape {
 		super (imgURL, x, y, margin, steps, xBoundary, yBoundary);
 	}
 	
-	public VerticallyMovingShape(String imgURL, int margin, int steps, int xBoundary, int yBoundary) {
+	public VerticallyMovingShape(String imgURL, int margin, double  steps, int xBoundary, int yBoundary) {
 		super (imgURL, margin, steps, xBoundary, yBoundary);
 	}
 

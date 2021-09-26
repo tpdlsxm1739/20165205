@@ -5,8 +5,8 @@ import java.net.*;
 
 
 
-public class DiagonallyMovingShape extends Shape{
-	public DiagonallyMovingShape(String imgURL, int x, int y, int margin, int steps, int xBoundary, int yBoundary) {
+public class DiagonallyMovingShape extends PosImageIcon{
+	public DiagonallyMovingShape(String imgURL, int x, int y, int margin, double steps, int xBoundary, int yBoundary) {
 		// imgPath : 그림 파일의 경로명
 		// x, y : 이미지의 위치 좌표
 		// margin : 이 이미지의 영역을 나타내는 범위 (이 영역안에 있으면 충돌 한 것으로 판단 하기 위함)
@@ -15,7 +15,7 @@ public class DiagonallyMovingShape extends Shape{
 		super (imgURL, x, y, margin, steps, xBoundary, yBoundary);
 	}
 	
-	public DiagonallyMovingShape(String imgURL, int margin, int steps, int xBoundary, int yBoundary) {
+	public DiagonallyMovingShape(String imgURL, int margin, double  steps, int xBoundary, int yBoundary) {
 		super (imgURL, margin, steps, xBoundary, yBoundary);
 	}
 
